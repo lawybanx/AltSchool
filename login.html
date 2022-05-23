@@ -4,164 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <!-- Main Section -->
-    <main>
-      <!-- About Me Section -Row 1-->
-      <section class="about" id="me">
-        <section class="about-img"></section>
-        <section class="about-content">
-          <h2>About Me</h2>
-          <p>
-            My names are Muhammad-Awwal Bankole. I'm a student of AltSchool
-            Africa enrolled in the Software engineering course. Before
-            enrolling, I had been a self taught developer using resources like
-            Youtube and paid courses on Udemy. I am enthusiastic about learning
-            new things and willing to gve my all for the betterment of my self.
-          </p>
-          <br />
-          <h3>My goals for this diploma course are:</h3>
-          <ul>
-            <li>Be a certified Software Engineer.</li>
-            <li>Gain experience building production level applications.</li>
-            <li>#</li>
-            <li>#</li>
-            <li>#</li>
-          </ul>
-        </section>
-      </section>
-      <!-- Education, Certificates and Experience Section -Row 2-->
-      <section class="edu-exp">
-        <!-- Education -->
-        <section class="edu">
-          <h2>Education</h2>
-          <div>
-            <div class="col">Degree</div>
-            <div class="col">School</div>
-            <div class="col">Year</div>
-          </div>
-          <div class="row">
-            <div class="col">BSc. Human Resource Management</div>
-            <div class="col">University of Lagos</div>
-            <div class="col">2020</div>
-          </div>
-        </section>
-        <!-- Certificates -->
-        <section class="cert">
-          <h2>Certificates</h2>
-          <div>
-            <div class="col">Certificate</div>
-            <div class="col">View</div>
-          </div>
-          <div class="row">
-            <div class="col">MERN eCommerce From Scratch</div>
-            <div class="col">
-              <a
-                href="https://res.cloudinary.com/dbrukzcby/image/upload/v1653067304/Udemy_Mern_E-commerce_zjcilb.jpg"
-                target="_blank"
-                >View/Download</a
-              >
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              MERN Stack Front To Back: Full Stack React, Redux & Node.js
-            </div>
-            <div class="col">
-              <a
-                href="https://res.cloudinary.com/dbrukzcby/image/upload/v1653067280/Udemy_Mern_hhecwc.jpg"
-                target="_blank"
-                >View/Download</a
-              >
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">The Complete 2022 Web Development Bootcamp</div>
-            <div class="col">
-              <a
-                href="https://res.cloudinary.com/dbrukzcby/image/upload/v1653067277/Udemy_bootcamp_n9o9me.jpg"
-                target="_blank"
-                >View/Download</a
-              >
-            </div>
-          </div>
-        </section>
-        <!-- Experience -->
-        <section class="exp">
-          <h2>Experience</h2>
-          ####
-        </section>
-      </section>
-      <!-- Hobbies and Skills Section -Row 3-->
-      <section class="skills-container">
-        <h2>Skills</h2>
-        <div class="skills">
-          <div class="wrap">
-            <div class="progress">
-              <span class="skill">HTML <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">CSS <i class="val">75%</i></span>
-
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" style="width: 75%"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Javascript <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" style="width: 70%"></div>
-              </div>
-            </div>
-          </div>
-          <div class="wrap">
-            <div class="progress">
-              <span class="skill">React <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" style="width: 70%"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Node <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" style="width: 70%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2>Hobbies</h2>
-        <p>Reading Manga</p>
-        <p>Watching Anime</p>
-        <p>Reading Light Novels</p>
-        <p>Football</p>
-        <p>Sleeping</p>
-      </section>
-    </main>
-    <!-- Contact Me Section -Row 4-->
-    <footer>
-      <section class="contact" id="contact">
-        <div>
-          <h2>Contact Me</h2>
-          <form class="form-control">
-            <label for="name">Your Name</label>
-            <input type="text" name="name" id="name" required /><br />
-            <label for="name">Your Email</label>
-            <input type="email" name="email" id="email" required /><br />
-            <label for="name">Message</label>
-            <textarea name="message" rows="10" required></textarea><br />
-            <button type="submit" class="btn">Send Message</button>
+    <!--? NAVIGATION SECTION -->
+    <nav>
+      <div class="header-logo">
+        <p>Awwal Bankole</p>
+        <div id="menu" class="fa-solid fa-bars" onclick="onClick()"></div>
+      </div>
+      <ul class="dropdown-menu">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <!--? HEADER SECTION-->
+    <header>
+      <div class="banner-image-div">
+        <img
+          class="banner-image"
+          src="https://res.cloudinary.com/dbrukzcby/image/upload/v1653316920/cyborg_nt0hf5.png"
+          alt="hero-banner"
+        />
+      </div>
+      <div class="banner-overlay-div"></div>
+      <section class="banner-text-section">
+        <span class="banner-text">
+          <form>
+            <label for="email">Enter your email:</label>
+            <input type="email" title="email" name="email" required /><br />
+            <label for="password">Enter your password:</label>
+            <input type="email" title="email" name="password" required /><br />
+            <p>
+              Don't have an account? <a href="register.html">Register now</a>
+            </p>
+            <button type="submit" class="btn">Sign In</button>
           </form>
-        </div>
+        </span>
       </section>
-      <section>
-        <h2>Socials</h2>
-      </section>
-    </footer>
-    <!-- Footer Section -->
+    </header>
+
+    <!-- BACK-TO-TOP BUTTON -->
+    <button type="reset" class="back-to-top hidden">
+      <i class="fa-solid fa-circle-arrow-up fa-3x"></i>
+    </button>
+    <script src="script.js"></script>
   </body>
 </html>
