@@ -29,3 +29,13 @@ const onClick = () => {
   dropdown.classList.toggle("fa-times");
 };
 
+const userInput = document.querySelector(".div1");
+const equalsKey = document.querySelector(".div16");
+
+const result = Number(userInput.value);
+const addition = result + 1;
+
+equalsKey.addEventListener("click", () => {
+  console.log(typeof(result));
+  console.log(addition);
+});
